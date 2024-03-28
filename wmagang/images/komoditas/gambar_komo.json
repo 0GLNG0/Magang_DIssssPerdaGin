@@ -1,0 +1,22 @@
+[
+    {
+        "nama":"telur",
+        "gambar":"images/komoditas/TELUR.png"
+    },
+    {
+        "nama":"beras",
+        "gambar":"images/komoditas/beras-pre.jpeg"
+    },
+    {
+        "nama":"dagin sapi",
+        "gambar":"images/komoditas/DAGING.png"
+    },
+    {
+        "nama":"cabe besar",
+        "gambar":"images/komoditas/CABE_MERAH.png"
+    },
+    {
+        "nama":"cabe rawit",
+        "gambar":"images/komoditas/CABE_RAWIT.png"
+    }
+]
