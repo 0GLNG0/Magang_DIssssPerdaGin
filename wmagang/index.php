@@ -137,32 +137,7 @@
                               </div>
 
 
-                              <div class="fa-eye-icon">
-                                   <i class="fa fa-eye">
-                                        <?php
-                                        // koneksi
-                                        $conn = mysqli_connect('localhost', 'root', '', 'db_dispendagrin');
 
-                                        // pilih database
-                                        $count_query = mysqli_query($conn, "SELECT * FROM tb_counter");
-
-                                        // logika
-                                        if ($count_query) {
-                                             $row = mysqli_fetch_array($count_query);
-                                             $current_count = $row['counts'];
-                                             $new_count = $current_count + 1;
-                                             $update_count = mysqli_query($conn, "UPDATE tb_counter SET counts = '" . $new_count . "'");
-                                             echo $new_count;
-                                        } else {
-                                             echo "Error: " . mysqli_error($conn);
-                                        }
-
-                                        // close connection
-                                        mysqli_close($conn);
-                                        ?>
-
-                                   </i>
-                              </div>
                               <div class="scroll-up-icon">
                                    <i class="fa fa-arrow-up"></i>
                               </div>
@@ -526,54 +501,81 @@ WHERE rn = 1 AND nama_barang IN ('Beras premium', 'Beras Medium', 'Telur Ayam ra
           <div class="container">
                <div class="row">
 
-                    <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
-                         <h1 class="text-white custom-color" data-aos="fade-up" data-aos-delay="100">
-                              Disperdagin
-                              <strong class="gradient-text"><br>Kota Kediri</strong>
-                         </h1>
+                    <div class="col-lg-4">
+                         <img src="images/dp1.png" class="img-fluid" alt="">
                     </div>
+                    <div class="f-line"></div>
 
-                    <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
-                         <h4 class="my-4">Contact Info</h4>
+                    <div class="col-sm-4" data-aos="fade-up" data-aos-delay="200">
+                         <h4 class="my-4 text-white">Kantor Kami</h4>
+                         <div class="col">
+                              <i class="fa fa-home mr-2 footer-icon text-white">
+                              </i>
+                         </div>
 
-                         <p class="mb-1">
-                              <i class="fa fa-phone mr-2 footer-icon"></i>
-                              +99 080 070 4224
-                         </p>
-
-                         <p>
-                              <a href="#">
-                                   <i class="fa fa-envelope mr-2 footer-icon"></i>
-                                   hello@company.com
-                              </a>
-                         </p>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300">
-                         <h4 class="my-4">Kantor Kami</h4>
-
-                         <p class="mb-1">
-                              <i class="fa fa-home mr-2 footer-icon"></i>
+                         <h6 class="mb-0 text-white">
                               Jl. Penanggungan NO. 7, Bandar Lor, Kec. Mojoroto, Kota Kediri, Jawa Timur
+                         </h6>
+                    </div>
+                    <div class="col-lg-3 " data-aos="fade-up" data-aos-delay="200">
+
+                         <h4 class="my-4 text-white">Hubungi Kami</h4>
+
+                         <h6 class="mb-1 text-white">
+                              <i class="fa fa-phone footer-icon"></i>
+                              +99 080 070 4224
+                         </h6>
+
+                         <h6 class="text-white">
+                              <a href="#" class="text-white">
+                                   <i class="fa fa-envelope footer-icon"></i>
+                                   DISSSSttttt@gmail.com
+                              </a>
+                         </h6>
+                         <p>
+                         <ul class="social-icon">
+                              <li><a href="#" class="fa fa-instagram text-white"></a></li>
+                              <li><a href="#" class="fa fa-twitter text-white"></a></li>
+                         </ul>
                          </p>
                     </div>
+                    <div class="f-line"></div>
+                    <div class="col">
+                         <p class="text-white">Statistik</p>
+                         <div class="fa-eye-icon">
+                              <i class="fa text-white">
+                                   <?php
+                                   // koneksi
+                                   $conn = mysqli_connect('localhost', 'root', '', 'db_dispendagrin');
 
-                    <div class="col-lg-4 mx-lg-auto text-center col-md-8 col-12" data-aos="fade-up"
-                         data-aos-delay="400">
-                         <p class="copyright-text">Copyright &copy; 2023 DISPERDAGIN
-                              <br>
+                                   // pilih database
+                                   $count_query = mysqli_query($conn, "SELECT * FROM tb_counter");
+
+                                   // logika
+                                   if ($count_query) {
+                                        $row = mysqli_fetch_array($count_query);
+                                        $current_count = $row['counts'];
+                                        $new_count = $current_count + 1;
+                                        $update_count = mysqli_query($conn, "UPDATE tb_counter SET counts = '" . $new_count . "'");
+                                        echo $new_count;
+                                   } else {
+                                        echo "Error: " . mysqli_error($conn);
+                                   }
+
+                                   // close connection
+                                   mysqli_close($conn);
+                                   ?>
+
+                              </i>
+                         </div>
                     </div>
-
-                    <div class="col-lg-3 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
-                         <ul class="social-icon">
-                              <li><a href="#" class="fa fa-instagram"></a></li>
-                              <li><a href="#" class="fa fa-twitter"></a></li>
-                              <li><a href="#" class="fa fa-dribbble"></a></li>
-                              <li><a href="#" class="fa fa-behance"></a></li>
-                         </ul>
-                    </div>
-
                </div>
+
+          </div>
+
+          <div class="mx-auto Copyright" data-aos="fade-up" data-aos-delay="400">
+               <p class="copyright-text mt-5 text-white">Copyright &copy; 2023 DISPERDAGIN
+                    <br>
           </div>
      </footer>
 
