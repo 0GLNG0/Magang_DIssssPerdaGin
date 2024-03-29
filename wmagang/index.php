@@ -141,13 +141,100 @@
                               <div class="scroll-up-icon">
                                    <i class="fa fa-arrow-up"></i>
                               </div>
+
+                              <div class="fa-eye-icon">
+                                   <button class="btn" type="button" data-toggle="modal" data-target="#exampleModal">
+                                        <img src="images/massage.png" class="w-50" alt="">
+                                   </button </div>
                          </ul>
                     </div>
                </div>
           </div>
      </nav>
 
+     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                    <div class="modal-header">
+                         <h5 class="modal-title" id="exampleModalLabel">Table Kritik dan Saran</h5>
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                         </button>
+                    </div>
+                    <div class="modal-body">
+                         <form method="post" id="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+                              <table>
+                                   <tr>
+                                        <td>
+                                             <label for="Kritik">Kritik:</label>
+                                        </td>
+                                        <td>
+                                             <input type="text" id="Kritik" name="Kritik" rows="4" cols="50">
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                        <td>
+                                             <label for="Saran">Saran:</label>
+                                        </td>
+                                        <td>
+                                             <input type="text" id="Saran" name="Saran" rows="4" cols="50">
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                        <td>
+                                             <label for="Nilai">Nilai:</label>
+                                        </td>
+                                        <td>
+                                             <input type="number" id="Nilai" name="Nilai" min="0" max="10">
+                                             <input type="submit" name="submit" value="submit">
+                                        </td>
+                                   </tr>
+                              </table>
+                         </form>
+                         <div id="floatingMessage" class="hidden">Saran Anda Akan Menjadi Masukan Kami Agar Terus
+                              Berkembang Dan Melayani Dengan Sepenuh Hati</div>
+                    </div>
+                    <div class="modal-footer">
+                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <?php
+     $conn = mysqli_connect("localhost", "root", "", "db_pesan");
+     if (isset($_POST["submit"])) {
+          $Kritik = mysqli_real_escape_string($conn, $_POST['Kritik']);
+          $saran = mysqli_real_escape_string($conn, $_POST['Saran']);
+          $nilai = mysqli_real_escape_string($conn, $_POST['Nilai']);
 
+          mysqli_query($conn, "INSERT INTO massage (Kritik, Saran, Nilai)
+                              VALUES ('$Kritik', '$saran', '$nilai')");
+
+          echo "Saran Anda Akan Menjadi Masukan Kami Agar Terus Berkembang Dan Melayani Dengan Sepenuh Hati";
+     }
+     // echo "<div id='floatingMessage'>Pesan telah berhasil terkirim!</div>";
+     
+     $conn->close();
+     ?>
+     <script>
+          document.getElementById("form").addEventListener("submit", function (event) {
+               event.preventDefault(); // Prevent form submission
+
+               // Show floating message
+               var floatingMessage = document.getElementById("floatingMessage");
+               floatingMessage.style.display = "block";
+
+               // Hide floating message after 3 seconds (adjust as needed)
+               setTimeout(function () {
+                    floatingMessage.style.display = "none";
+               }, 3000);
+
+               // Submit the form (optional)
+               this.submit();
+          });
+
+     </script>
      <!-- PROJECT -->
 
 
@@ -542,7 +629,7 @@ WHERE rn = 1 AND nama_barang IN ('Beras premium', 'Beras Medium', 'Telur Ayam ra
                     <div class="f-line"></div>
                     <div class="col">
                          <p class="text-white">Statistik</p>
-                         <div class="fa-eye-icon">
+                         <div class="">
                               <i class="fa text-white">
                                    <?php
                                    // koneksi
@@ -565,7 +652,7 @@ WHERE rn = 1 AND nama_barang IN ('Beras premium', 'Beras Medium', 'Telur Ayam ra
                                    // close connection
                                    mysqli_close($conn);
                                    ?>
-
+                                   /Hari
                               </i>
                          </div>
                     </div>
@@ -573,7 +660,7 @@ WHERE rn = 1 AND nama_barang IN ('Beras premium', 'Beras Medium', 'Telur Ayam ra
 
           </div>
 
-          <div class="mx-auto Copyright" data-aos="fade-up" data-aos-delay="400">
+          <div class="mx-auto Copyright">
                <p class="copyright-text mt-5 text-white">Copyright &copy; 2023 DISPERDAGIN
                     <br>
           </div>

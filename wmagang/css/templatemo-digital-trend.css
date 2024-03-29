@@ -408,6 +408,17 @@ transition: all .5s ease;
   transition: background-color 0.3s;
   display: none;
 }
+.kritik-icon {
+  position: fixed;
+  bottom: 50px;
+  left: 20px;
+  background-color: var(--gold);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: none;
+}
 
 .scroll-up-icon:hover {
   background-color: #f0f0f0;
@@ -416,6 +427,29 @@ transition: all .5s ease;
 .fa-eye{
   color: white;
 }
+
+.fa-eye-icon {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color:  rgba(17,147,110, 0.5);
+  padding: 1px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.fa-eye-icon:hover {
+  background-color: #f0f0f0;
+}
+
+.fa-eye-icon i,
+    .scroll-up-icon i {
+        display: block;
+        /* width: 100%;
+        height: 100%; */
+        border-radius: 80%;
+    }
 
 .scroll-up-icon i {
         display: block;
@@ -1008,7 +1042,11 @@ margin-top: 6em;
   border-left: 2px solid rgb(255, 255, 255);
   height: 10rem;
 }
-
+.Copyright{
+  position: static;
+  z-index: 1;
+  background-color: #057a8d;
+}
 /*---------------------------------------
  SOCIAL ICON              
 -----------------------------------------*/
@@ -1320,4 +1358,19 @@ input[type="checkbox"] {
 }
 .custom-tbl {
 font-weight: 600;
+}
+
+#floatingMessage {
+  position: fixed;
+  bottom: 20px; /* Adjust position as needed */
+  right: 20px; /* Adjust position as needed */
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  display: none;
+}
+
+.hidden {
+  display: none;
 }
