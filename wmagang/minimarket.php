@@ -111,12 +111,8 @@
                             <ul class="isi-dropdown" id="informasi-dropdown">
                                 <li><a href="informasi-pasar.php">Informasi Pasar</a></li>
                                 <li><a href="pasar.html">Pasar</a></li>
-                                <li>
-                                    <a href="#" id="minimarket-dropdown-toggle">Minimarket</a>
-                                    <ul class="isi-drop" id="minimarket-dropdown">
-                                        <li><a href="indomaret.html">Indomaret</a></li>
-                                        <li><a href="alfamart.html">Alfamart</a></li>
-                                    </ul>
+                                <li class="nav-item">
+                                    <a href="minimarket.php" class=" ">minimarket</a>
                                 </li>
                                 <li><a href="mall.html">Mall</a></li>
                                 <li><a href="ikm.html">Industri Kecil Menengah</a></li>
@@ -140,9 +136,7 @@
                             <a href="https://pusakaumkm.id/home/" class="nav-link" target="_blank">Produk
                                 Unggulan</a>
                         </li>
-                        <!-- <li class="nav-item">
-                         <a href="#" class="nav-link">Zona Integritas</a>
-                    </li> -->
+
                         <li class="nav-item">
                             <a href="#" class="nav-link smoothScroll">Unduhan</a>
                         </li>
@@ -173,9 +167,17 @@
                                 </ul>
                             </div>
                         </div>
+
+
+
                         <div class="scroll-up-icon">
                             <i class="fa fa-arrow-up"></i>
                         </div>
+
+                        <div class="fa-eye-icon">
+                            <button class="btn" type="button" data-toggle="modal" data-target="#exampleModal">
+                                <img src="images/massage.png" class="w-50" alt="">
+                            </button </div>
                     </ul>
                 </div>
             </div>
@@ -1052,69 +1054,80 @@
     <footer class="site-footer">
         <div class="container">
             <div class="row">
-                <div class="px-1">
-                    <img src="images/dp1.png" class="footer-imgae" alt="">
-                </div>
-                <div class="v-line"></div>
-                <div class="col" data-aos="fade-up" data-aos-delay="200">
-                    <h4 class="my-4 text-white">Alamat</h4>
 
-                    <p class="mb-1 text-white">
-                        <i class="fa fa-phone mr-2 footer-icon"></i>
+                <div class="col-lg-3 mx-5">
+                    <img src="images/dp1.png" class=" footer-imgae" alt="">
+                </div>
+                <div class="f-line"></div>
+
+                <div class="col-lg-3 " data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="my-4 text-white">Kantor Kami</h4>
+                    <p class="mb-0 footer-text text-white mx-3">
+                        <i class="fa fa-home mr-2 footer-icon text-white">
+                        </i>
+                        Jl. Penanggungan NO. 7, Bandar Lor, Kec. Mojoroto, Kota Kediri, Jawa Timur
+                    </p>
+                </div>
+                <div class="col-lg-3 text-left" data-aos="fade-up" data-aos-delay="200">
+
+                    <h4 class="my-4 text-white">Hubungi Kami</h4>
+
+                    <p class="text-left text-white">
+                        <i class="fa fa-phone footer-icon"></i>
                         +99 080 070 4224
                     </p>
 
-                    <p>
-                        <a href="#">
-                            <i class="fa fa-envelope mr-2 footer-icon"></i>
-                            hello@company.com
+                    <p class="text-white text-left">
+                        <a href="#" class="text-white">
+                            <i class="fa fa-envelope footer-icon"></i>
+                            DISSSSttttt@gmail.com
                         </a>
                     </p>
-                    <div class="col order-12" data-aos="fade-up" data-aos-delay="200">
-                        <h4 class="my-4">Hubungi kamie</h4>
-
-                        <p class="mb-1">
-                            <i class="fa fa-phone mr-2 footer-icon"></i>
-                            +99 080 070 4224
-                        </p>
-
-                        <p>
-                            <a href="#">
-                                <i class="fa fa-envelope mr-2 footer-icon"></i>
-                                hello@company.com
-                            </a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-4 mx-lg-auto text-center col-md-8 col-12" data-aos="fade-up"
-                        data-aos-delay="400">
-                        <p class="copyright-text">Copyright &copy; 2020 Your Company
-                            <br>
-                            <a rel="nofollow noopener" href="https://templatemo.com">Design: TemplateMo</a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
-                    <ul class="footer-link">
-                        <li><a href="#">Stories</a></li>
-                        <li><a href="#">Work with us</a></li>
-                        <li><a href="#">Privacy</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
+                    <p>
                     <ul class="social-icon">
-                        <li><a href="#" class="fa fa-instagram"></a></li>
-                        <li><a href="#" class="fa fa-twitter"></a></li>
-                        <li><a href="#" class="fa fa-dribbble"></a></li>
-                        <li><a href="#" class="fa fa-behance"></a></li>
+                        <li><a href="#" class="fa fa-instagram text-white"></a></li>
+                        <li><a href="#" class="fa fa-twitter text-white"></a></li>
                     </ul>
+                    </p>
                 </div>
+                <div class="f-line"></div>
+                <div class="col">
+                    <p class="text-white text-left">Statistik</p>
+                    <div class="px-0">
+                        <i class="fa text-white">
+                            <?php
+                            // koneksi
+                            $conn = mysqli_connect('localhost', 'root', '', 'db_dispendagrin');
 
+                            // pilih database
+                            $count_query = mysqli_query($conn, "SELECT * FROM tb_counter");
+
+                            // logika
+                            if ($count_query) {
+                                $row = mysqli_fetch_array($count_query);
+                                $current_count = $row['counts'];
+                                $new_count = $current_count + 1;
+                                $update_count = mysqli_query($conn, "UPDATE tb_counter SET counts = '" . $new_count . "'");
+                                echo $new_count;
+                            } else {
+                                echo "Error: " . mysqli_error($conn);
+                            }
+
+                            // close connection
+                            mysqli_close($conn);
+                            ?>
+                            /Hari
+                        </i>
+                    </div>
+                </div>
             </div>
+
+        </div>
+
+        <div class="mx-auto Copyright">
+            <p class="copyright-text mt-5 text-white">Copyright &copy; 2023 DISPERDAGIN
+                <br>
+        </div>
     </footer>
 
     <!-- SCRIPTS -->

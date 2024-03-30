@@ -211,33 +211,19 @@
           mysqli_query($conn, "INSERT INTO massage (Kritik, Saran, Nilai)
                               VALUES ('$Kritik', '$saran', '$nilai')");
 
-          echo "Saran Anda Akan Menjadi Masukan Kami Agar Terus Berkembang Dan Melayani Dengan Sepenuh Hati";
+          echo "
+          <div class='alert alert-warning alert-dismissible fade show' role='alert'>
+               Saran Anda Akan Menjadi Masukan Kami Agar Terus Berkembang Dan Melayani Dengan Sepenuh Hati
+               <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+               </button>
+          </div>
+          ";
+          // echo "Saran Anda Akan Menjadi Masukan Kami Agar Terus Berkembang Dan Melayani Dengan Sepenuh Hati";
      }
-     // echo "<div id='floatingMessage'>Pesan telah berhasil terkirim!</div>";
-     
      $conn->close();
      ?>
-     <script>
-          document.getElementById("form").addEventListener("submit", function (event) {
-               event.preventDefault(); // Prevent form submission
-
-               // Show floating message
-               var floatingMessage = document.getElementById("floatingMessage");
-               floatingMessage.style.display = "block";
-
-               // Hide floating message after 3 seconds (adjust as needed)
-               setTimeout(function () {
-                    floatingMessage.style.display = "none";
-               }, 3000);
-
-               // Submit the form (optional)
-               this.submit();
-          });
-
-     </script>
      <!-- PROJECT -->
-
-
      <!-- HERO -->
      <!-- =========================================================================================
                                              <==carousel==>
@@ -440,9 +426,6 @@
      <!-- =========================================================================================
                                    <==perkembangan==>
      =========================================================================================== -->
-     <?php
-
-     ?>
      <div class="text-center py-5">
           <h1>PERKEMBANGAN HARGA</h1>
      </div>
@@ -460,34 +443,7 @@
      // ubah data json menjadi array asosiaytif
      $komoditas = json_decode($jsonData, true);
 
-     // loop
-     // percobaan pertama untuk menampilakn harga tapi yg terbaru
-     // $qry="SELECT
-// data_harga_barang.nama_barang,
-// data_harga_barang.tanggal,
-// data_harga_barang.harga_sekarang,
-// data_harga_barang.kemarin,
-// data_harga_barang.selisih
-// FROM
-// data_harga_barang
-// WHERE nama_barang IN ('Beras premium', 'Beras Medium', 'Telur Ayam ras', 'Cabe Merah Keriting', 'Cabe Merah Besar')
-// ORDER BY
-//  nama_barang, tanggal";
-     // percobaan ke dua untuk menampilkan harga tapi yg terbaru
-     // $qry = "SELECT DISTINCT nama_barang,
-     //                     harga_sekarang,
-     //                     harga_kemarin,
-     //                     selisih FROM data_harga_barang WHERE nama_barang IN ('Beras premium', 'Beras Medium', 'Telur Ayam ras', 'Cabe Merah Keriting', 'Cabe Merah Besar') ORDER BY nama_barang, tanggal";
-     
-     // percobaan ke tiga untuk menampilkan harga tapi yg terbaru
-     //      $qry = "SELECT nama_barang,
-     //                harga_sekarang,
-     //                harga_kemarin,
-     //                selisih, MAX(tanggal) AS latest_date , harga_sekarang
-     //                FROM data_harga_barang
-     // GROUP BY nama_barang;
-     // ";
-     
+     // loop     
      // percobaan ke empat untuk menampilkan harga tapi yg terbaru
      $qry = "SELECT nama_barang, harga_sekarang, tanggal ,harga_kemarin,selisih
 FROM (
@@ -588,37 +544,34 @@ WHERE rn = 1 AND nama_barang IN ('Beras premium', 'Beras Medium', 'Telur Ayam ra
           <div class="container">
                <div class="row">
 
-                    <div class="col-lg-4">
-                         <img src="images/dp1.png" class="img-fluid" alt="">
+                    <div class="col-lg-3 mx-5">
+                         <img src="images/dp1.png" class=" footer-imgae" alt="">
                     </div>
                     <div class="f-line"></div>
 
-                    <div class="col-sm-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-lg-3 " data-aos="fade-up" data-aos-delay="200">
                          <h4 class="my-4 text-white">Kantor Kami</h4>
-                         <div class="col">
+                         <p class="mb-0 footer-text text-white mx-3">
                               <i class="fa fa-home mr-2 footer-icon text-white">
                               </i>
-                         </div>
-
-                         <h6 class="mb-0 text-white">
                               Jl. Penanggungan NO. 7, Bandar Lor, Kec. Mojoroto, Kota Kediri, Jawa Timur
-                         </h6>
+                         </p>
                     </div>
-                    <div class="col-lg-3 " data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-lg-3 text-left" data-aos="fade-up" data-aos-delay="200">
 
                          <h4 class="my-4 text-white">Hubungi Kami</h4>
 
-                         <h6 class="mb-1 text-white">
+                         <p class="text-left text-white">
                               <i class="fa fa-phone footer-icon"></i>
                               +99 080 070 4224
-                         </h6>
+                         </p>
 
-                         <h6 class="text-white">
+                         <p class="text-white text-left">
                               <a href="#" class="text-white">
                                    <i class="fa fa-envelope footer-icon"></i>
                                    DISSSSttttt@gmail.com
                               </a>
-                         </h6>
+                         </p>
                          <p>
                          <ul class="social-icon">
                               <li><a href="#" class="fa fa-instagram text-white"></a></li>
@@ -628,8 +581,8 @@ WHERE rn = 1 AND nama_barang IN ('Beras premium', 'Beras Medium', 'Telur Ayam ra
                     </div>
                     <div class="f-line"></div>
                     <div class="col">
-                         <p class="text-white">Statistik</p>
-                         <div class="">
+                         <p class="text-white text-left">Statistik</p>
+                         <div class="px-0">
                               <i class="fa text-white">
                                    <?php
                                    // koneksi

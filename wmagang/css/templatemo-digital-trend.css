@@ -1003,11 +1003,11 @@ color: var(--white-color);
   height: 15rem;
 }
 .footer-imgae{
-  width: 20rem;
+  width: 15rem;
 }
 .site-footer {
   background: linear-gradient(to bottom ,var(--green),var(--menu-bg)110px);
-padding: 2rem 0 3em 0;
+padding: 2rem 0 0.1px 0;
 }
 
 .site-footer a {
@@ -1043,9 +1043,18 @@ margin-top: 6em;
   height: 10rem;
 }
 .Copyright{
-  position: static;
+  position: relative;
   z-index: 1;
   background-color: #057a8d;
+  text-align: center;
+}
+.footer-text{
+  text-align: justify;
+  line-height: 1rem;
+  letter-spacing: -1px;
+  display: flex;
+align-items: flex-start;
+gap: 2px;
 }
 /*---------------------------------------
  SOCIAL ICON              
@@ -1153,10 +1162,6 @@ h3 {
 
 .copyright-text {
   margin: 2.5em 0 1em 0;
-}
-.Copyright{
-
-  background-color: #006eff;
 }
 
 .footer-link li {
