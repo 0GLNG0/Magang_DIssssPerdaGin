@@ -84,7 +84,7 @@
         <i class="fa fa-eye">
           <?php
           //koneksi
-          $conn = mysqli_connect('localhost', 'root', '', 'db_dispendagrin');
+          $conn = mysqli_connect('localhost', 'root', '', 'db_counter');
 
           //pilih database
           $count = mysqli_query($conn, "SELECT * FROM tb_counter");

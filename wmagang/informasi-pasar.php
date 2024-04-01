@@ -48,9 +48,7 @@
                <div class="col">
                     <form class="d-flex bg-light f-search rounded" role="search">
                          <input type="text" placeholder="Find" class="border-0 rounded">
-                         <button class="btn border-0 bg-white py-0 px-0" type="submit"><img
-                                   src="images/search-icons.png" class="border-0 search-icons my-auto gb-white"
-                                   alt=""></button>
+                         <button class="btn border-0 bg-white py-0 px-0" type="submit"><img src="images/search-icons.png" class="border-0 search-icons my-auto gb-white" alt=""></button>
                     </form>
                </div>
           </div>
@@ -59,8 +57,7 @@
      <nav class="navbar bg-white navbar-expand-sm position-sticky shadow shadow-sm">
           <div class="row">
                <div class="col">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                          <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
@@ -89,8 +86,7 @@
                               <li class="nav-item">
                                    <a href="#" class="nav-link">Layanan</a>
                                    <ul class="isi-dropdown" id="layanan-dropdown">
-                                        <li><a href="https://banmod.indagkediri.online/home.html"
-                                                  target="_blank">Bantuan
+                                        <li><a href="https://banmod.indagkediri.online/home.html" target="_blank">Bantuan
                                                   Modal</a>
                                         </li>
                                         <!-- <li><a href="#">Izin Tempat Penjualan Minuman Beralkohol</a></li> -->
@@ -115,23 +111,19 @@
                                    <a href="contact.php" class="nav-link ">Greate Sale</a>
                               </li>
                               <li class="nav-item">
-                                   <a href="contact.php" class="nav-link ">Survey</a>
+                                   <a href="surveyPasar/index.php" class="nav-link ">Survey</a>
                               </li>
                               <div class="row px-5">
                                    <div class="col px-5">
                                         <ul class="navbar-nav float-right">
                                              <li class="nav-item">
-                                                  <a href="https://www.instagram.com/disperdagin_kotakediri?igsh=ZDhvNmF0NXlpempr"
-                                                       target="blank">
-                                                       <img src="images/ig-icons.png"
-                                                            class="img-thumbnail w-75 border-0" alt="">
+                                                  <a href="https://www.instagram.com/disperdagin_kotakediri?igsh=ZDhvNmF0NXlpempr" target="blank">
+                                                       <img src="images/ig-icons.png" class="img-thumbnail w-75 border-0" alt="">
                                                   </a>
                                              </li>
                                              <li class="nav-item">
-                                                  <a href="https://www.instagram.com/disperdagin_kotakediri?igsh=ZDhvNmF0NXlpempr"
-                                                       target="blank">
-                                                       <img src="images/fb-icons.png"
-                                                            class="img-thumbnail w-75 border-0" alt="">
+                                                  <a href="https://www.instagram.com/disperdagin_kotakediri?igsh=ZDhvNmF0NXlpempr" target="blank">
+                                                       <img src="images/fb-icons.png" class="img-thumbnail w-75 border-0" alt="">
                                                   </a>
                                              </li>
                                         </ul>
@@ -202,7 +194,7 @@
                               <table>
                                    <tr>
                                         <?php
-                                        $query_checkbox = "SELECT DISTINCT nama_barang FROM data_harga_barang";
+                                        $query_checkbox = "SELECT DISTINCT nama_barang FROM data_barang_bandar";
                                         $result_checkbox = $conn->query($query_checkbox);
 
                                         if ($result_checkbox->num_rows > 0) {
@@ -218,9 +210,9 @@
                                         <br>
                                         <script>
                                              // fungsi select all
-                                             document.getElementById('select-all').addEventListener('change', function () {
+                                             document.getElementById('select-all').addEventListener('change', function() {
                                                   var checkboxes = document.querySelectorAll("input[name='filter[]']");
-                                                  checkboxes.forEach(function (checkbox) {
+                                                  checkboxes.forEach(function(checkbox) {
                                                        checkbox.checked = document.getElementById('select-all').checked;
                                                   });
                                                   updateSelectedCount();
@@ -228,8 +220,8 @@
 
                                              // fungsi check box
                                              var checkboxes = document.querySelectorAll("input[name='filter[]']");
-                                             checkboxes.forEach(function (checkbox) {
-                                                  checkbox.addEventListener('change', function () {
+                                             checkboxes.forEach(function(checkbox) {
+                                                  checkbox.addEventListener('change', function() {
                                                        updateSelectedCount();
                                                   });
                                              });
@@ -256,8 +248,7 @@
                                    <p>Pilih tanggal untuk menampilkan data tabel</p>
                                    <span for="tanggal" id="inputGroup-sizing-sm" class="input-group-text">Pilih
                                         tanggal:</span>
-                                   <input type="date" class="form-control" aria-label="Small"
-                                        aria-describedby="inputGroup-sizing-sm" id="tanggal">
+                                   <input type="date" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id="tanggal">
                                    <div class="mt-2" id="hasil"></div>
                               </div>
                          </div>
@@ -285,12 +276,12 @@
 FROM (
     SELECT nama_barang, harga_sekarang,harga_kemarin,selisih, tanggal,
            ROW_NUMBER() OVER (PARTITION BY nama_barang ORDER BY tanggal DESC) AS rn
-    FROM data_harga_barang
+    FROM data_barang_bandar
 ) AS ranked
 WHERE rn = 1 AND nama_barang IN ('Beras premium', 'Beras Medium', 'Telur Ayam ras', 'Cabe Merah Keriting', 'Cabe Merah Besar');"
 
 
-                         ?>
+                    ?>
                     <div class="container ">
                          <div class="row d-flex justify-content-center">
 
@@ -298,15 +289,15 @@ WHERE rn = 1 AND nama_barang IN ('Beras premium', 'Beras Medium', 'Telur Ayam ra
 
                               $result = mysqli_query($conn, $qry);
                               // =================
-// percobaan ke dua
-// =================
-// $total_data = count($komoditas);
-// $i = 0;
-// while ($i < $total_data) {
-//      $gambar = $komoditas[$i]['gambar'];
-//      echo "<img src='$gambar'>";
-//  }
-                              
+                              // percobaan ke dua
+                              // =================
+                              // $total_data = count($komoditas);
+                              // $i = 0;
+                              // while ($i < $total_data) {
+                              //      $gambar = $komoditas[$i]['gambar'];
+                              //      echo "<img src='$gambar'>";
+                              //  }
+
 
                               foreach ($komoditas as $value) {
                                    $gambar = $value['gambar'];
@@ -328,10 +319,9 @@ WHERE rn = 1 AND nama_barang IN ('Beras premium', 'Beras Medium', 'Telur Ayam ra
                                              } else {
                                                   $keterangan = "images/project/project-detail/sama.png";
                                                   $selisih = "<p class='card-title mb-1 text-warning'>Rp.$selisih</p>";
-                                             }
-                                             ;
+                                             };
                                              echo
-                                                  "<div class='col-4 my-5'>
+                                             "<div class='col-4 my-5'>
                 <div class='card border-0 bg-white'>
                     <div class='card-img'>
                         <img src='$gambar' class='img-komo border-3 p-0'' alt=''>
@@ -461,11 +451,11 @@ WHERE rn = 1 AND nama_barang IN ('Beras premium', 'Beras Medium', 'Telur Ayam ra
 <script src="js/date-filter.js"></script>
 
 <script>
-     document.addEventListener('DOMContentLoaded', function () {
+     document.addEventListener('DOMContentLoaded', function() {
           var scrollUpIcon = document.querySelector('.scroll-up-icon');
 
           // Tampilkan tombol ketika pengguna menggulir ke bawah
-          window.addEventListener('scroll', function () {
+          window.addEventListener('scroll', function() {
                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                     scrollUpIcon.style.display = 'block';
                } else {
@@ -474,7 +464,7 @@ WHERE rn = 1 AND nama_barang IN ('Beras premium', 'Beras Medium', 'Telur Ayam ra
           });
 
           // Smooth scroll ke atas ketika tombol diklik
-          scrollUpIcon.addEventListener('click', function () {
+          scrollUpIcon.addEventListener('click', function() {
                smoothScrollToTop();
           });
 
@@ -490,14 +480,14 @@ WHERE rn = 1 AND nama_barang IN ('Beras premium', 'Beras Medium', 'Telur Ayam ra
 </script>
 
 <script>
-     document.addEventListener('DOMContentLoaded', function () {
+     document.addEventListener('DOMContentLoaded', function() {
           // Tombol toggle dropdown minimarket
           var minimarketToggle = document.getElementById('minimarket-dropdown-toggle');
           // Dropdown minimarket
           var minimarketDropdown = document.getElementById('minimarket-dropdown');
 
           // Tampilkan dropdown minimarket ketika tombol toggle diklik
-          minimarketToggle.addEventListener('click', function () {
+          minimarketToggle.addEventListener('click', function() {
                if (minimarketDropdown.style.display === 'none' || minimarketDropdown.style.display === '') {
                     minimarketDropdown.style.display = 'block';
                } else {
@@ -506,7 +496,7 @@ WHERE rn = 1 AND nama_barang IN ('Beras premium', 'Beras Medium', 'Telur Ayam ra
           });
 
           // Sembunyikan dropdown minimarket saat klik di luar dropdown
-          document.addEventListener('click', function (event) {
+          document.addEventListener('click', function(event) {
                var targetElement = event.target;
                if (targetElement !== minimarketToggle && targetElement !== minimarketDropdown) {
                     minimarketDropdown.style.display = 'none';
