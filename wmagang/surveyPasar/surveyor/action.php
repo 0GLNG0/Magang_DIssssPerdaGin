@@ -20,6 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $barang = $_POST['barang'];
     $harga_sekarang = $_POST['harga_sekarang'];
     $satuan = $_POST['satuan'];
+    $gambar = $_POST['gambar'];
 
     // tentukan tabel berdasarkan lokasi
     $tabel = ""; //variabel untuk menampung tabel
@@ -58,8 +59,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $selisih = $harga_sekarang[$i] - $harga_kemarin;
 
             // insert data ke database
-            $sql = "INSERT INTO $tabel (tanggal, lokasi, nama_barang, harga_sekarang, harga_kemarin, satuan, selisih) 
-                VALUES ('$tanggal', '$lokasi', '$barang[$i]', '$harga_sekarang[$i]', '$harga_kemarin', '$satuan[$i]', '$selisih')";
+            $sql = "INSERT INTO $tabel (tanggal, lokasi, nama_barang, harga_sekarang, harga_kemarin, satuan, selisih, gambar) 
+                VALUES ('$tanggal', '$lokasi', '$barang[$i]', '$harga_sekarang[$i]', '$harga_kemarin', '$satuan[$i]', '$selisih', '$gambar[$i]')";
 
             if ($conn->query($sql) === TRUE) {
                 echo "Data berhasil disimpan ke database.";
