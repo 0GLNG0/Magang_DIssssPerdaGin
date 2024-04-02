@@ -33,8 +33,8 @@
       center: true,
       autoplayHoverPause: false,
       autoplay: true,
-      margin:110,
-      autoHeight:true,
+      margin:500,
+      autoWidth:true,
       responsiveClass:true,
       responsive:{
           0:{
