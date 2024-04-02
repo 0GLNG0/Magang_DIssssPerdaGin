@@ -380,8 +380,8 @@
                     </div>
                     <div class="col">
                          <div class="card shadow shadow-sm rounded-top border-0">
-                              <a href="">
-                                   <img src="./images/icons/scales.svg" class=" w-75 border-0" alt="">
+                              <img src="./images/icons/scales.svg" class="
+                              w-75 border-0" alt="">
                               </a>
                               <div class="card-title rounded-bottom">
                                    <p>TERA/ TERA ULANG</p>
@@ -396,70 +396,95 @@
                                              <==informasi==>
      =========================================================================================== -->
      <div class="text-center py-5">
-          <h1>INFROMASI</h1>
+          <h1>INGFO</h1>
      </div>
-     <section class=" d-flex justify-content-center align-items-center pt-5" data-aos="fade-up">
-          <div class="container text-center">
-               <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
-                    <div class="col">
-                         <div class="card shadow shadow-sm rounded-top border-0 img-informasi">
-                              <a href="">
-                                   <img src="https://i.ibb.co/TrxBfQs/image2.png" class="w-100 border-0" alt="">
-                              </a>
-                              <div class="card-img-overlay rounded-bottom shadow">
-                                   <p>lorem ipsum</p>
+     <div class="text-center py-5">
+          <section class=" d-flex justify-content-center align-items-center pt-5" data-aos="fade-up">
+               <div class="container text-center">
+                    <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
+                         <div class="col">
+                              <div class="card rounded-top card-info bg-transparent border-0 img-informasi">
+                                   <a href="">
+                                        <img src="https://i.ibb.co/TrxBfQs/image2.png"
+                                             class="w-100 border-0 bg-transparent" alt="">
+                                   </a>
+                                   <div class="card-img-overlay ingfo bg-transaparent rounded-bottom shadow">
+                                        <img src="./images/icons/shopping-cart.svg" class="float-start" alt="">
+                                        <p class="card-text text-center">Mall</p>
+                                        <p class="card-text">
+                                             <small>lorem ipsum (*************************)</small>
+                                        </p>
+                                   </div>
                               </div>
                          </div>
-                    </div>
-                    <div class="col">
-                         <div class="card shadow shadow-sm rounded-top border-0 img-informasi">
-                              <a href="">
-                                   <img src="https://i.ibb.co/4fG06R8/image1.png" class="w-100 border-0" alt="">
-                              </a>
-                              <div class="card-img-overlay rounded-bottom shadow">
-                                   <p>lorem ipsum</p>
+                         <div class="col">
+                              <div class="card rounded-top card-info bg-transparent border-0 img-informasi">
+                                   <a href="">
+                                        <img src="https://i.ibb.co/4fG06R8/image1.png"
+                                             class="w-100 border-0 bg-transparent" alt="">
+                                   </a>
+                                   <div class="card-img-overlay ingfo bg-transaparent rounded-bottom shadow">
+                                        <img src="./images/icons/storefront.svg" class="float-start" alt="">
+                                        <p class="card-text text-center">Industri Kecil Mengah</p>
+                                        <p class="card-text">
+                                             <small>lorem ipsum (*************************)</small>
+                                        </p>
+                                   </div>
                               </div>
                          </div>
-                    </div>
-                    <div class="col">
-                         <div class="card shadow shadow-sm rounded-top border-0 img-informasi">
-                              <a href="">
-                                   <img src="https://i.ibb.co/Z2DYd0V/image4.png" class="w-100 border-0" alt="">
-                              </a>
-                              <div class="card-img-overlay rounded-bottom shadow">
-                                   <p>lorem ipsum</p>
+                         <div class="col">
+                              <div class="card rounded-top card-info bg-transparent border-0 img-informasi">
+                                   <a href="">
+                                        <img src="https://i.ibb.co/Z2DYd0V/image4.png"
+                                             class="w-100 border-0 bg-transparent" alt="">
+                                   </a>
+                                   <div class="card-img-overlay ingfo bg-transaparent rounded-bottom shadow">
+                                        <img src="./images/icons/handbag.svg" class="float-start" alt="">
+                                        <p class="card-text text-center">Pasar</p>
+                                        <p class="card-text">
+                                             <small>lorem ipsum (*************************)</small>
+                                        </p>
+                                        <div class="card-text text-center">
+                                        </div>
+                                   </div>
                               </div>
                          </div>
-                    </div>
-                    <div class="col">
-                         <div class="card shadow shadow-sm rounded-top border-0 img-informasi">
-                              <a href="">
-                                   <img src="https://i.ibb.co/P5pCN21/image3.png" class="w-100 border-0" alt="">
-                              </a>
-                              <div class="card-img-overlay rounded-bottom shadow">
-                                   <p>lorem ipsum</p>
+                         <div class="col">
+                              <div class="card rounded-top card-info bg-transparent border-0 img-informasi">
+                                   <a href="">
+                                        <img src="https://i.ibb.co/P5pCN21/age3.png"
+                                             class="w-100 border-0 bg-transparent" alt="">
+                                   </a>
+                                   <div class="card-img-overlay ingfo bg-transaparent rounded-bottom shadow">
+                                        <img src="./images/icons/basket.svg" class="float-start" alt="">
+                                        <p class="card-text text-center">Minimarket</p>
+                                        <p class="card-text">
+                                             <small>lorem ipsum (*************************)</small>
+                                        </p>
+                                        <div class="card-text text-center">
+                                        </div>
+                                   </div>
                               </div>
                          </div>
                     </div>
                </div>
-          </div>
-     </section>
+          </section>
 
-     <!-- =========================================================================================
+          <!-- =========================================================================================
                                    <==perkembangan==>
      =========================================================================================== -->
-     <div class="text-center py-5">
-          <h1>PERKEMBANGAN HARGA</h1>
-     </div>
+          <div class="text-center py-5">
+               <h1>PERKEMBANGAN HARGA</h1>
+          </div>
 
-     <?php
-     $conn = mysqli_connect('localhost', 'root', '', 'data_harga_pokok');
+          <?php
+          $conn = mysqli_connect('localhost', 'root', '', 'data_harga_pokok');
 
-     if (mysqli_connect_errno()) {
-          echo "Koneksi database gagal: " . mysqli_connect_error();
-          exit();
-     }
-     $qry = "SELECT nama_barang, harga_sekarang, tanggal ,harga_kemarin,selisih, gambar
+          if (mysqli_connect_errno()) {
+               echo "Koneksi database gagal: " . mysqli_connect_error();
+               exit();
+          }
+          $qry = "SELECT nama_barang, harga_sekarang, tanggal ,harga_kemarin,selisih, gambar
 FROM (
     SELECT nama_barang, harga_sekarang,harga_kemarin,selisih, tanggal,
            ROW_NUMBER() OVER (PARTITION BY nama_barang ORDER BY tanggal DESC) AS rn,
@@ -467,12 +492,12 @@ FROM (
     FROM data_barang_bandar
 ) AS ranked
 WHERE rn = 1 AND nama_barang IN ('Beras premium', 'Beras Medium', 'Telur Ayam ras', 'Cabe Merah Keriting', 'Cabe Merah Besar');"
-     ?>
+          ?>
      <div class="container">
           <div class="row row-cols-3 row-cols-lg-4 g-2 g-lg-5 d-flex justify-content-center" data-aos="fade-up">
 
-               <?php
-               $result = mysqli_query($conn, $qry);
+                    <?php
+                    $result = mysqli_query($conn, $qry);
 
                if (mysqli_num_rows($result) > 0) {
                     while ($row = mysqli_fetch_assoc($result)) {
@@ -491,9 +516,10 @@ WHERE rn = 1 AND nama_barang IN ('Beras premium', 'Beras Medium', 'Telur Ayam ra
                          } else {
                               $keterangan = "images/project/project-detail/sama.png";
                               $selisih = "<p class='card-title mb-1 text-warning'>Rp.$selisih</p>";
-                         };
+                         }
+                         ;
                          echo
-                         "<div class='col ms-2'>
+                              "<div class='col ms-2'>
                 <div class='card border-0 bg-white'>
                     <div class='card-img'>
                         <img src=images/komoditas/$gambar class='img-fluid shadow shadow-sm border-3 p-0'' alt=''>
@@ -515,54 +541,54 @@ WHERE rn = 1 AND nama_barang IN ('Beras premium', 'Beras Medium', 'Telur Ayam ra
                 </div>
             </div>
         </div>";
+                         }
                     }
-               }
-               ?>
-          </div>
-          <div class="d-flex justify-content-center">
-               <div class="row g-1 d-flex justify-content-center" data-aos="fade-up">
-                    <div class="col d-block">
-                         <div class="col-md-4">
-                              <div class="card-img">
-                                   <img src="images/project/project-detail/naik.png" alt="">
+                    ?>
+               </div>
+               <div class="d-flex justify-content-center">
+                    <div class="row g-1 d-flex justify-content-center" data-aos="fade-up">
+                         <div class="col d-block">
+                              <div class="col-md-4">
+                                   <div class="card-img">
+                                        <img src="images/project/project-detail/naik.png" alt="">
+                                   </div>
+                              </div>
+                              <div class="col-md-8">
+                                   <div class="card-title">
+                                        <p>naik</p>
+                                   </div>
                               </div>
                          </div>
-                         <div class="col-md-8">
-                              <div class="card-title">
-                                   <p>naik</p>
+                         <div class="col d-block">
+                              <div class="col-md-4">
+                                   <div class="card-img">
+                                        <img src="images/project/project-detail/turun.png" alt="">
+                                   </div>
+                              </div>
+                              <div class="col-md-8">
+                                   <div class="card-title">
+                                        <p>turun</p>
+                                   </div>
                               </div>
                          </div>
-                    </div>
-                    <div class="col d-block">
-                         <div class="col-md-4">
-                              <div class="card-img">
-                                   <img src="images/project/project-detail/turun.png" alt="">
+                         <div class="col d-block">
+                              <div class="col-md-4">
+                                   <div class="card-img">
+                                        <img src="images/project/project-detail/sama.png" alt="">
+                                   </div>
                               </div>
-                         </div>
-                         <div class="col-md-8">
-                              <div class="card-title">
-                                   <p>turun</p>
-                              </div>
-                         </div>
-                    </div>
-                    <div class="col d-block">
-                         <div class="col-md-4">
-                              <div class="card-img">
-                                   <img src="images/project/project-detail/sama.png" alt="">
-                              </div>
-                         </div>
-                         <div class="col-md-8">
-                              <div class="card-title">
-                                   <p>sama</p>
+                              <div class="col-md-8">
+                                   <div class="card-title">
+                                        <p>sama</p>
+                                   </div>
                               </div>
                          </div>
                     </div>
                </div>
           </div>
-     </div>
-     <div class="d-flex justify-content-center">
-          <a href="informasi-pasar.php" class="btn more">More infomation</a>
-     </div>
+          <div class="d-flex justify-content-center">
+               <a href="informasi-pasar.php" class="btn more">More infomation</a>
+          </div>
      </div>
 
      <!-- feed ig -->
