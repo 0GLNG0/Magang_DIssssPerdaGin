@@ -2,14 +2,12 @@
 <html lang="en">
 
 <head>
-
      <title>DISPERDAGIN | Dinas Perdagangan Dan Industri</title>
-
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+     <!-- link css -->
      <link href="css/bootstrap.min.css" rel="stylesheet">
      <link rel="stylesheet" href="css/font-awesome.min.css">
      <link rel="stylesheet" href="css/aos.css">
@@ -19,11 +17,13 @@
      <link rel="stylesheet" href="css/style.css">
 
      <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/style.css">
      <link rel="stylesheet" href="css/templatemo-digital-trend.css">
 
 </head>
 
 <body>
+
      <div class="loading-screen">
           <div class="loader"></div>
      </div>
@@ -253,331 +253,54 @@
      $conn->close();
 
      ?>
-     <!-- PROJECT -->
-     <!-- HERO -->
-     <!-- =========================================================================================
-                                             <==carousel==>
-     =========================================================================================== -->
-     <section class="project" id="project">
-          <div class="container-xxl">
-               <div class="row">
-                    <div class="col-lg-12 col-12">
-                         <div class="owl-carousel owl-theme" id="project-slide">
-                              <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="100">
 
-                                   <img src="images/project/project-detail/woman-shopping-organic-vegetables-fruits_1150-17779.avif" class=" img-fluid" alt="project image">
-                                   <div class="project-info">
-                                        <small>DSF</small>
 
-                                        <h3>
-                                             <a href="project-detail.html">
-                                                  <span>Brantas, beyond infinity</span>
-                                                  <i class="fa fa-angle-right project-icon"></i>
-                                             </a>
-                                        </h3>
-                                   </div>
-                              </div>
-
-                              <div class="item project-wrapper" data-aos="fade-up">
-                                   <img src="images/project/project-detail/vegan.jpg" class="" alt="project image">
-
-                                   <div class="project-info">
-                                        <small>DSF</small>
-
-                                        <h3>
-                                             <a href="project-detail.html">
-                                                  <span>Brantas, beyond infinity</span>
-                                                  <i class="fa fa-angle-right project-icon"></i>
-                                             </a>
-                                        </h3>
-                                   </div>
-                              </div>
-
-                              <div class="item project-wrapper" data-aos="fade-up">
-                                   <img src="images/project/project-detail/aset_carousel.jpg" class="" alt="project image">
-
-                                   <div class="project-info">
-                                        <small>DSF</small>
-
-                                        <h3>
-                                             <a href="project-detail.html">
-                                                  <span>Brantas, beyond infinity</span>
-                                                  <i class="fa fa-angle-right project-icon"></i>
-                                             </a>
-                                        </h3>
-                                   </div>
-                              </div>
-
-                              <div class="item project-wrapper" data-aos="fade-up">
-                                   <img src="images/project/project-detail/nasa.jpg" class="" alt="project image">
-
-                                   <div class="project-info">
-                                        <small>DSF</small>
-
-                                        <h3>
-                                             <a href="project-detail.html">
-                                                  <span>Brantas, beyond infinity</span>
-                                                  <i class="fa fa-angle-right project-icon"></i>
-                                             </a>
-                                        </h3>
-                                   </div>
-                              </div>
-                         </div>
-                    </div>
-
-               </div>
-          </div>
-     </section>
-
-     <!-- =========================================================================================
-                                             <==layanan==>
-     =========================================================================================== -->
-     <div class="text-center py-5">
-          <h1>LAYANAN</h1>
-     </div>
-     <section class="  align-items-center" data-aos="fade-up">
-          <div class="container text-center">
-               <div class="row row-cols-3 row-cols-lg-5 g-2 g-lg-3 d-flex justify-content-center">
-                    <div class="col">
-                         <div class="card shadow shadow-sm rounded-top border-0">
-                              <a href="">
-                                   <img src="./images/icons/hand-coins.svg" class="w-75 border-0" alt="">
-                              </a>
-                              <div class="card-title rounded-bottom">
-                                   <p>BANTUAN MODAL</p>
-                              </div>
-                         </div>
-                    </div>
-                    <div class="col">
-                         <div class="card shadow shadow-sm rounded-top border-0">
-                              <a href="">
-                                   <img src="./images/icons/gavel.svg" class=" w-75 border-0" alt="">
-                              </a>
-                              <div class="card-title rounded-bottom">
-                                   <p>LEGALITAS MERK</p>
-                              </div>
-                         </div>
-                    </div>
-                    <div class="col">
-                         <div class="card shadow shadow-sm rounded-top border-0">
-                              <a href="">
-                                   <img src="./images/icons/seal-check.svg" class=" w-75 border-0" alt="">
-                              </a>
-                              <div class="card-title rounded-bottom">
-                                   <p>SERTIFIKASI HALAL</p>
-                              </div>
-                         </div>
-                    </div>
-                    <div class="col">
-                         <div class="card shadow shadow-sm rounded-top border-0">
-                              <a href="">
-                                   <img src="./images/icons/notebook.svg" class=" w-75 border-0" alt="">
-                              </a>
-                              <div class="card-title rounded-bottom">
-                                   <p>SINas</p>
-                              </div>
-                         </div>
-                    </div>
-                    <div class="col">
-                         <div class="card shadow shadow-sm rounded-top border-0">
-                              <a href="">
-                                   <img src="./images/icons/scales.svg" class=" w-75 border-0" alt="">
-                              </a>
-                              <div class="card-title rounded-bottom">
-                                   <p>TERA/ TERA ULANG</p>
-                              </div>
-                         </div>
-                    </div>
-               </div>
-          </div>
-     </section>
-
-     <!-- =========================================================================================
-                                             <==informasi==>
-     =========================================================================================== -->
-     <div class="text-center py-5">
-          <h1>INFROMASI</h1>
-     </div>
-     <section class=" d-flex justify-content-center align-items-center pt-5" data-aos="fade-up">
-          <div class="container text-center">
-               <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
-                    <div class="col">
-                         <div class="card shadow shadow-sm rounded-top border-0 img-informasi">
-                              <a href="">
-                                   <img src="https://i.ibb.co/TrxBfQs/image2.png" class="w-100 border-0" alt="">
-                              </a>
-                              <div class="card-img-overlay rounded-bottom shadow">
-                                   <p>lorem ipsum</p>
-                              </div>
-                         </div>
-                    </div>
-                    <div class="col">
-                         <div class="card shadow shadow-sm rounded-top border-0 img-informasi">
-                              <a href="">
-                                   <img src="https://i.ibb.co/4fG06R8/image1.png" class="w-100 border-0" alt="">
-                              </a>
-                              <div class="card-img-overlay rounded-bottom shadow">
-                                   <p>lorem ipsum</p>
-                              </div>
-                         </div>
-                    </div>
-                    <div class="col">
-                         <div class="card shadow shadow-sm rounded-top border-0 img-informasi">
-                              <a href="">
-                                   <img src="https://i.ibb.co/Z2DYd0V/image4.png" class="w-100 border-0" alt="">
-                              </a>
-                              <div class="card-img-overlay rounded-bottom shadow">
-                                   <p>lorem ipsum</p>
-                              </div>
-                         </div>
-                    </div>
-                    <div class="col">
-                         <div class="card shadow shadow-sm rounded-top border-0 img-informasi">
-                              <a href="">
-                                   <img src="https://i.ibb.co/P5pCN21/image3.png" class="w-100 border-0" alt="">
-                              </a>
-                              <div class="card-img-overlay rounded-bottom shadow">
-                                   <p>lorem ipsum</p>
-                              </div>
-                         </div>
-                    </div>
-               </div>
-          </div>
-     </section>
-
-     <!-- =========================================================================================
-                                   <==perkembangan==>
-     =========================================================================================== -->
-     <div class="text-center py-5">
-          <h1>PERKEMBANGAN HARGA</h1>
+     <!-- hero judul -->
+     <div class="hero-title">
+          <h1>Legalitas Merk</h1>
+          <h4>DISPERDAGIN Kota Kediri</h4>
      </div>
 
-     <?php
-     $conn = mysqli_connect('localhost', 'root', '', 'data_harga_pokok');
+     <center>
+          <h3>Tata Cara Pendaftaran Sertifikasi Halal</h3>
+     </center>
 
-     if (mysqli_connect_errno()) {
-          echo "Koneksi database gagal: " . mysqli_connect_error();
-          exit();
-     }
-     $qry = "SELECT nama_barang, harga_sekarang, tanggal ,harga_kemarin,selisih, gambar
-FROM (
-    SELECT nama_barang, harga_sekarang,harga_kemarin,selisih, tanggal,
-           ROW_NUMBER() OVER (PARTITION BY nama_barang ORDER BY tanggal DESC) AS rn,
-           gambar
-    FROM data_barang_bandar
-) AS ranked
-WHERE rn = 1 AND nama_barang IN ('Beras premium', 'Beras Medium', 'Telur Ayam ras', 'Cabe Merah Keriting', 'Cabe Merah Besar');"
-     ?>
-     <div class="container">
-          <div class="row row-cols-3 row-cols-lg-4 g-2 g-lg-5 d-flex justify-content-center" data-aos="fade-up">
+     <!-- konten -->
+     <div class="container-content">
+          <div class="content">
+               <div class="text">
+                    <h6>Persyaratan yang dibutuhkan:</h6>
+                    <ol>
+                         <li>
+                              E-tiket Merk
+                         </li>
+                         <li>
+                              TTD Digital
+                         </li>
+                         <li>
+                              Dokumen Pendukung (KTP/Suket UKM dll)
+                         </li>
+                    </ol>
+               </div>
 
-               <?php
-               $result = mysqli_query($conn, $qry);
-
-               if (mysqli_num_rows($result) > 0) {
-                    while ($row = mysqli_fetch_assoc($result)) {
-                         $nama_barang = $row["nama_barang"];
-                         $harga_sekarang = $row["harga_sekarang"];
-                         $harga_kemarin = $row["harga_kemarin"];
-                         $gambar = $row["gambar"];
-                         $selisih = $harga_sekarang - $harga_sekarang;
-                         $selisih = $row["selisih"];
-                         if ($harga_sekarang > $harga_kemarin) {
-                              $keterangan = "images/project/project-detail/naik.png";
-                              $selisih = "<p class='card-title mb-1 text-success'>Rp.$selisih</p>";
-                         } else if ($harga_sekarang < $harga_kemarin) {
-                              $keterangan = "images/project/project-detail/turun.png";
-                              $selisih = "<p class='card-title mb-1 text-danger'>Rp.$selisih</p>";
-                         } else {
-                              $keterangan = "images/project/project-detail/sama.png";
-                              $selisih = "<p class='card-title mb-1 text-warning'>Rp.$selisih</p>";
-                         };
-                         echo
-                         "<div class='col ms-2'>
-                <div class='card border-0 bg-white'>
-                    <div class='card-img'>
-                        <img src=images/komoditas/$gambar class='img-fluid shadow shadow-sm border-3 p-0'' alt=''>
-                    </div>
-                    <div class='card-img-overlay bg-white head mx-3 px-1 mb-0 border-0'>
-                        <p class=' text-center mb-0 mt-0 px-0 mx-0'>$nama_barang</p>
-                        <hr class='border border-black border-2 my-0'>
-                    <div class='row gx-1 d-flex justify-content-center'>
-                        <div class='col py-1 mx-auto body-card'>
-                        <p class='card-title mb-1'>Rp.$harga_sekarang</p>
-                        <img src='$keterangan' class='keterangan'>
-                        </div>
-                        <div class='col py-1 body-card'>
-                        <p class='card-title fw-bold mb-2'>Sebelumnya</p>
-                        <p class='card-title mb-1 text-silent'>Rp.$harga_kemarin</p>
-                        $selisih
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>";
-                    }
-               }
-               ?>
+               <!-- unduhan -->
+               <div class="download-file">
+                    <p>Unduh Panduan Lengkap Legalitas Merk</p>
+                    <a href="images/flowchart_halal.png" download=""><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                              <path d="M18.375 12.4688V17.0625C18.375 17.4106 18.2367 17.7444 17.9906 17.9906C17.7444 18.2367 17.4106 18.375 17.0625 18.375H3.9375C3.5894 18.375 3.25556 18.2367 3.00942 17.9906C2.76328 17.7444 2.625 17.4106 2.625 17.0625V12.4688C2.625 12.2947 2.69414 12.1278 2.81721 12.0047C2.94028 11.8816 3.1072 11.8125 3.28125 11.8125C3.4553 11.8125 3.62222 11.8816 3.74529 12.0047C3.86836 12.1278 3.9375 12.2947 3.9375 12.4688V17.0625H17.0625V12.4688C17.0625 12.2947 17.1316 12.1278 17.2547 12.0047C17.3778 11.8816 17.5447 11.8125 17.7188 11.8125C17.8928 11.8125 18.0597 11.8816 18.1828 12.0047C18.3059 12.1278 18.375 12.2947 18.375 12.4688ZM10.0357 12.933C10.0967 12.9941 10.169 13.0425 10.2487 13.0755C10.3284 13.1085 10.4138 13.1255 10.5 13.1255C10.5862 13.1255 10.6716 13.1085 10.7513 13.0755C10.831 13.0425 10.9033 12.9941 10.9643 12.933L14.2455 9.6518C14.3065 9.59082 14.3549 9.51844 14.3879 9.43878C14.4209 9.35911 14.4379 9.27373 14.4379 9.1875C14.4379 9.10127 14.4209 9.01589 14.3879 8.93622C14.3549 8.85656 14.3065 8.78418 14.2455 8.7232C14.1846 8.66223 14.1122 8.61386 14.0325 8.58087C13.9529 8.54787 13.8675 8.53089 13.7812 8.53089C13.695 8.53089 13.6096 8.54787 13.53 8.58087C13.4503 8.61386 13.3779 8.66223 13.317 8.7232L11.1562 10.8847V3.28125C11.1562 3.1072 11.0871 2.94028 10.964 2.81721C10.841 2.69414 10.674 2.625 10.5 2.625C10.326 2.625 10.159 2.69414 10.036 2.81721C9.91289 2.94028 9.84375 3.1072 9.84375 3.28125V10.8847L7.68305 8.7232C7.55991 8.60006 7.3929 8.53089 7.21875 8.53089C7.0446 8.53089 6.87759 8.60006 6.75445 8.7232C6.63131 8.84634 6.56214 9.01335 6.56214 9.1875C6.56214 9.36165 6.63131 9.52866 6.75445 9.6518L10.0357 12.933Z" fill="#076797" />
+                         </svg> Unduh</a>
+               </div>
           </div>
-          <div class="d-flex justify-content-center">
-               <div class="row g-1 d-flex justify-content-center" data-aos="fade-up">
-                    <div class="col d-block">
-                         <div class="col-md-4">
-                              <div class="card-img">
-                                   <img src="images/project/project-detail/naik.png" alt="">
-                              </div>
-                         </div>
-                         <div class="col-md-8">
-                              <div class="card-title">
-                                   <p>naik</p>
-                              </div>
-                         </div>
-                    </div>
-                    <div class="col d-block">
-                         <div class="col-md-4">
-                              <div class="card-img">
-                                   <img src="images/project/project-detail/turun.png" alt="">
-                              </div>
-                         </div>
-                         <div class="col-md-8">
-                              <div class="card-title">
-                                   <p>turun</p>
-                              </div>
-                         </div>
-                    </div>
-                    <div class="col d-block">
-                         <div class="col-md-4">
-                              <div class="card-img">
-                                   <img src="images/project/project-detail/sama.png" alt="">
-                              </div>
-                         </div>
-                         <div class="col-md-8">
-                              <div class="card-title">
-                                   <p>sama</p>
-                              </div>
-                         </div>
-                    </div>
+
+          <div class="content">
+               <div class="image">
+                    <h6>Langkah-langkah Registrasi:</h6>
+                    <img src="images/flowchart_halal.png" alt="legalitas merk">
                </div>
           </div>
      </div>
-     <div class="d-flex justify-content-center">
-          <a href="informasi-pasar.php" class="btn more">More infomation</a>
-     </div>
-     </div>
 
-     <!-- feed ig -->
-     <div class="container py-5">
-          <center>
-               <h1>pojok media</h1>
-          </center>
-          <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-          <div class="elfsight-app-3cdf87fd-99f3-48d9-99b0-9b94e04c2f91" data-aos="fade-up" data-elfsight-app-lazy>
-          </div>
-     </div>
-     </div>
-     </section>
-
-
+     <!-- footer -->
      <footer class="site-footer">
           <div class="container">
                <div class="row">
@@ -723,7 +446,6 @@ WHERE rn = 1 AND nama_barang IN ('Beras premium', 'Beras Medium', 'Telur Ayam ra
                });
           });
      </script>
-
 
 </body>
 

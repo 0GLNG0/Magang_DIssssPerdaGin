@@ -137,15 +137,62 @@
               </td>
             </tr>
             <?php
-            $barang = array("Beras Premium", "Beras Medium", "Gula Kristal Putih", "Minyak Goreng Curah", "Minyak Goreng Kemasan Premium", "Minyak Goreng Kemasan Sederhana", "Minyak Goreng MINYAKITA", "Daging Sapi Paha Belakang", "Daging Ayam Ras", "Daging Ayam Kampung", "Telur Ayam Ras", "Telur Ayam Kampung", "SKM Merk Bendera", "SKM Merk Indomilk", "Susu Bubuk Merk Bendera (Instant)", "Susu Bubuk Merk Indomilk (Instant)", "Jagung Pipilan Kering", "Garam Beryodium Bata", "Garam Beryodium Halus", "Terigu Protein Sedang (Kemasan)", "Kedelai Impor", "Kedelai Lokal", "Indomie Rasa Kari Ayam", "Cabe Merah Keriting", "Cabe Merah Besar", "Cabe Rawit Merah", "Bawang Merah", "Bawang Putih Sinco/Honan", "Ikan Asin Teri", "Kacang Hijau", "Kacang Tanah", "Ketela Pohon", "Kol/Kubis", "Kentang", "Tomat Merah", "Wortel", "Buncis", "Ikan Bandeng", "Ikan Kembung", "Ikan Tuna", "Ikan Tongkol", "Ikan Cakalang", "Gas LPG 3Kg");
+            $barang = array(
+              "Beras Premium" => "https://i.ibb.co/DVqHBp7/beras.jpg",
+              "Beras Medium" => "https://i.ibb.co/DVqHBp7/beras.jpg",
+              "Gula Kristal Putih" => "https://i.ibb.co/5kMjGgd/gula-pasir.jpg",
+              "Minyak Goreng Curah" => "https://i.ibb.co/Pcxb1Np/minyak-curah.png",
+              "Minyak Goreng Kemasan Premium" => "https://i.ibb.co/Pcxb1Np/minyak-curah.png",
+              "Minyak Goreng Kemasan Sederhana" => "https://i.ibb.co/Pcxb1Np/minyak-curah.png",
+              "Minyak Goreng MINYAKITA" => "https://i.ibb.co/BcpGQht/minyakita.jpg",
+              "Daging Sapi Paha Belakang" => "https://i.ibb.co/WgwJXnC/daging-sapi.png",
+              "Daging Ayam Ras" => "https://i.ibb.co/3htc2Tf/daging-ayam-ras.png",
+              "Daging Ayam Kampung" => "https://i.ibb.co/3htc2Tf/daging-ayam-ras.png",
+              "Telur Ayam Ras" => "https://i.ibb.co/vwFpTbh/telur-ayam-ras.png",
+              "Telur Ayam Kampung" => "https://i.ibb.co/ZS3GdYz/telur-ayam-kampung.png",
+              "SKM Merk Bendera" => "https://i.ibb.co/zrM3Lr7/skm-bendera.jpg",
+              "SKM Merk Indomilk" => "https://i.ibb.co/KyWcBsn/skm-indomilk.png",
+              "Susu Bubuk Merk Bendera (Instant)" => "https://i.ibb.co/0J0ykZR/susu-bubuk-bendera.jpg",
+              "Susu Bubuk Merk Indomilk (Instant)" => "https://i.ibb.co/5xXjSKM/susu-bubuk-indomilk.jpg",
+              "Jagung Pipilan Kering" => "https://i.ibb.co/1z4RGDk/jagung-pipilan.png",
+              "Garam Beryodium Bata" => "https://i.ibb.co/6PczM9g/garam-bata.jpg",
+              "Garam Beryodium Halus" => "https://i.ibb.co/rdSQb47/garam-beryodium-halus.png",
+              "Terigu Protein Sedang (Kemasan)" => "https://i.ibb.co/SQCBSdN/tepung-terigu.png",
+              "Kedelai Impor" => "https://i.ibb.co/k85b001/kedelai-impor.png",
+              "Kedelai Lokal" => "https://i.ibb.co/k85b001/kedelai-impor.png",
+              "Indomie Rasa Kari Ayam" => "https://i.ibb.co/tPgZ4Rb/indomie-kari-ayam.jpg",
+              "Cabe Merah Keriting" => "https://i.ibb.co/sWm7Nd2/cabe-keriting.jpg",
+              "Cabe Merah Besar" => "https://i.ibb.co/g4BqcyQ/cabe-merah-besar.png",
+              "Cabe Rawit Merah" => "https://i.ibb.co/ySqXYc6/cabe-rawit.png",
+              "Bawang Merah" => "https://i.ibb.co/k0zTdLw/bawang-merah.png",
+              "Bawang Putih Sinco/Honan" => "https://i.ibb.co/dWWN33t/bawang-putih.png",
+              "Ikan Asin Teri" => "https://i.ibb.co/SdNdfH7/ikan-teri.png",
+              "Kacang Hijau" => "https://i.ibb.co/1skwNb7/kacang-hijau.jpg",
+              "Kacang Tanah" => "https://i.ibb.co/KmRtCT9/kacang-tanah.png",
+              "Ketela Pohon" => "https://i.ibb.co/H44YRNG/ketela-pohon.jpg",
+              "Kol/Kubis" => "https://i.ibb.co/fpPJTqV/kubis.png",
+              "Kentang" => "https://i.ibb.co/2FJjrS1/kentang.jpg",
+              "Tomat Merah" => "https://i.ibb.co/60WsCky/tomat.png",
+              "Wortel" => "https://i.ibb.co/8NQwJSq/wortel.jpg",
+              "Buncis" => "https://i.ibb.co/T2HvpbN/buncis.jpg",
+              "Ikan Bandeng" => "https://i.ibb.co/CW9kt4X/bandeng.jpg",
+              "Ikan Kembung" => "https://i.ibb.co/3FWjM5W/kembung.jpg",
+              "Ikan Tuna" => "https://i.ibb.co/Jdzmh8s/tuna.png",
+              "Ikan Tongkol" => "https://i.ibb.co/NKN5sHm/tongkol.jpg",
+              "Ikan Cakalang" => "https://i.ibb.co/s35Wgg6/cakalang.jpg",
+              "Gas LPG 3Kg" => "https://i.ibb.co/hXRqTxY/lpg.png"
+            );
+
             $satuan = array("Kg", "3Kg", "1 Liter", "397 gr/kl", "390 gr/kl", "400 gr/dos", "Buah", "Bungkus");
-            foreach ($barang as $item) {
+            foreach ($barang as $item => $gambar) {
             ?>
               <tr>
                 <td>
                   <div class="input-group">
                     <label for="barang"><?php echo $item; ?></label>
                     <input type="hidden" name="barang[]" id="barang" class="form-control" value="<?php echo $item; ?>">
+                    <input type="hidden" name="gambar[]" value="<?php echo $gambar; ?>">
+
                   </div>
                   <div class="input-group mb-3">
                     <span class="input-group-text">Rp</span>

@@ -20,6 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $barang = $_POST['barang'];
     $harga_sekarang = $_POST['harga_sekarang'];
     $satuan = $_POST['satuan'];
+    $gambar = $_POST['gambar'];
 
     // tentukan tabel berdasarkan lokasi
     $tabel = ""; //variabel untuk menampung tabel

@@ -322,6 +322,7 @@ MENU
   height: 62px;
   justify-content: center;
   align-content: center;
+  z-index: 2;
 }
 
 .navbar-menu .navbar-nav .nav-icon a {
@@ -900,12 +901,12 @@ MENU
   width: 100%;
   margin-right: 1em;
 }
-.img-informasi{
+.img-informasi {
   width: 270px; /* Lebar card */
-    height: 200px; /* Tinggi card */
+  height: 200px; /* Tinggi card */
 }
-.img-informasi img{
-    object-fit: fill;
+.img-informasi img {
+  object-fit: fill;
 }
 /*---------------------------------------
   ABOUT            
@@ -1220,11 +1221,10 @@ input[type="checkbox"] {
   box-shadow: 0px 3px 4px 1px #7d7b7b;
   font-size: 6px;
   border-radius: 12px;
-  
 }
 
-.body-card p{
-    position: relative;
+.body-card p {
+  position: relative;
   font-size: 12px;
   border-radius: 12px;
   width: fit-content;
@@ -1271,12 +1271,11 @@ input[type="checkbox"] {
     position: relative;
     /* width: 6rem; */
     box-shadow: 0px 3px 4px 1px #7d7b7b;
-    
   }
-  .head p{
-    font-size:10px;
+  .head p {
+    font-size: 10px;
   }
-  .keterangan{
+  .keterangan {
     width: 1rem;
   }
   .img-komo {
